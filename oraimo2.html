@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oraimo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="font-poppins/stylesheet.css" rel="stylesheet">
+
+    <style>
+      .marquee-w
+   {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+    }
+    .marquee {
+      background-color: chartreuse;
+      position:absolute;
+      display: block;
+      margin: auto auto;
+      white-space: nowrap;
+      overflow: hidden;
+      min-width: 100%;
+      height: 100%;
+  }
+  .marquee span {
+   
+    display: inline-block;
+    padding-left: 100%;
+    font-family: 'poppinsbold';
+    text-align: center;
+    -webkit-text-stroke: 1px #000;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 140px;
+    font-size: 20px;
+    animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0% {
+          transform: translate(0, 0);
+      }
+      100% {
+          transform: translate(-100%, 0);
+      }
+    }
+    .marquee-w .marquee a{
+      text-decoration: none;
+    }
+    .marquee-w .marquee a:hover{
+      text-decoration:underline;  
+    }
+    #item:hover{
+      color: chartreuse;
+    }
+    #item2{
+      margin-left: 150px;
+    }
+
+
+
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+      #foot{
+        margin-top: 20px;
+        width: 100%;
+      }
+      #foothead{
+        color: chartreuse;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="marquee-w">
+    <div class="marquee">
+        <span>Free shipping for orders over KES1500. Any other questions? Contact us at <a href="">Care.ke@oraimo.com</a></span>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-5">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="./images/WhatsApp Image 2023-11-01 at 12.10.05_8d5b5104.jpg"
+          height="80"
+          alt="Oraimo"
+          loading="lazy"
+        />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="item">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="item">Daily Deals</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="item">
+              Product
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Audio</a></li>
+              <li><a class="dropdown-item" href="#">Power</a></li>
+              <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+              <li><a class="dropdown-item" href="#">Wearable</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="item">
+              Support
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Track order</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Visit Carlcare</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" id="item">Burna Boy X oraimo | SpacePods</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Oraimo Products" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-default navbar-expand-sm">
+    <div class="container">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item"></li><a class="nav-link"id="item2" href="">free shipping over 1500</a></li>
+          <li class="nav-item" ><a class="nav-link"id="item2" href="">Cash on delivery</a></li>
+          <li class="nav-item"><a class="nav-link"id="item2" href="">Hassle-Free Warranty</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- table contents -->
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Images/clipper.jpg" alt="clipper image" height="200px"width="300px">
+            <div class="card-body">
+              <p class="card-text">oraimo SmartClipper 2 Prestige Self-sharpening Blades Precise Hair</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Images/headphones.png" alt="headphones image" height="200px"width="300px">
+            <div class="card-body">
+              <p class="card-text">oraimo BoomPop 2 Powerful Deep Bass Dual Device Connectivity</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Images/kettle.jpg" alt="kettle image" height="200px"width="300px">
+            <div class="card-body">
+              <p class="card-text">oraimo Double-wall Design Big Capacity Stainless Steel SmartKettle</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Images/mouse.jpg" alt="mouse image" height="200px"width="300px">
+            <div class="card-body">
+              <p class="card-text">oraimo SmartMouse P Anti-skid Ergonomic Design Wide.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Images/neckearphones.png" alt="neckearphones image" height="200px"width="300px">
+            <div class="card-body">
+              <p class="card-text">oraimo Necklace 4 Dual EQ Multiple Connection 50-hr playtime Quick Charge</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Images/powerbank.png" alt="powerbank image" height="200px"width="300px">
+            <div class="card-body">
+              <p class="card-text">oraimo Traveler Link 27 27000mAh Charging Cables AniFast  12W Fast Charge Power Bank</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Images/blender.jpg" alt="blender image" height="200px"width="300px">
+            <div class="card-body">
+              <p class="card-text">oraimo SmartBlender Large Capacity 2 Speeds Control Blender</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Images/toothbrush.jpg" alt="toothbrush image" height="200px"width="300px">
+            <div class="card-body">
+              <p class="card-text">oraimo SmartDent C2 Powerful Sonic Cleaning Electric Toothbrush</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Images/watch.png" alt="Watch image" height="200px"width="300px">
+            <div class="card-body">
+              <p class="card-text">oraimo Watch 3 Plus Wireless Call  1.83'' TFT Color Screen  IP68 Dust & Water Resistance</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- footer section -->
+  <div class="container" id="foot">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5 id="foothead">Newsletter:</h5>
+            <p>Get the Latest oraimo News and Giveaways</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Enter your email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div><br>
+            <p>SERVICE HOURS: Monday-Friday 9AM to 6PM</p>
+            <p> CUSTOMER SERVICE: +0721 899 999</p>
+            <p>Whatsapp us on 0728 810 810 / 0797 288 388</p>
+          </form>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5 id="foothead">About oraimo:::</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="foottext">About Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="foottext">Where to Buy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="foottext">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5 id="foothead">Terms:::</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="foottext">Warranty</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="foottext">Order & Shipping</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="foottext">Replacement & Refund</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="foottext">Terms & Conditions</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="foottext">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5 id="foothead">Get Help:::</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="foottext">Track Your Order</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="foottext">Visit Carlcare</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top bg-blac">
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img 
+            class="footerpic"
+            src="./images/WhatsApp Image 2023-11-01 at 12.10.05_8d5b5104.jpg"
+            height="80"
+            alt="Oraimo"
+            loading="lazy"
+          /><br>
+        </a>
+        <p id="footercopy">&copy; 2012-2023 oraimo Copyright.oraimo Technology (HK)Ltd</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
+  
